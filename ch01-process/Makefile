@@ -8,5 +8,10 @@ fork:
 	${CC} ${CFLAGS} ${SRC}/$@.c -o ${BUILD}/$@
 	${BUILD}/$@
 
+pipe:
+	mkdir -p ${BUILD}
+	${CC} ${CFLAGS} ${SRC}/$@.c -o ${BUILD}/$@
+	${BUILD}/$@
+
 clean:
 	rm -rf ${BUILD}
